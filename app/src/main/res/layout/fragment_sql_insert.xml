@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSqlInsert">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:textAlignment="center"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="帳號"/>
+            <EditText
+                android:id="@+id/insertAccount"
+                android:layout_weight="2"
+                android:maxLength="16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAlignment="center"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="密碼"/>
+            <EditText
+                android:id="@+id/insertPassword"
+                android:layout_weight="2"
+                android:maxLength="16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSqlInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新增"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
